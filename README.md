@@ -1,140 +1,80 @@
-# Frappe Strict Session Defaults
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Project Logo">
+  <p align="center">
+  Empowering developers with robust and streamlined session management.
+  <br />
+  <a href="https://grow.empress.eco/">Explore the Docs</a>
+  ·
+  <a href="https://github.com/empress-eco/strict_session_defaults/issues/new">Report Bug</a>
+  ·
+  <a href="https://github.com/empress-eco/strict_session_defaults/issues/new">Request Feature</a>
+  </p>
+</div>
 
-A small plugin for Frappe that enforces and manages the session defaults popup.
+## About The Project
 
----
+### 📖 Overview
+Strict Session Defaults is a compact and efficient plugin designed to enhance session management for developers and administrators. It simplifies and reinforces session defaults, ensuring a secure and smooth user experience.
 
-### Table of Contents
-- [Requirements](#requirements)
-- [Setup](#setup)
-  - [Install](#install)
-  - [Update](#update)
-  - [Uninstall](#uninstall)
-- [Usage](#usage)
-- [Issues](#issues)
-- [License](#license)
+### 🌟 Key Features
+- Quick and easy installation
+- Customizable session settings
+- Reliable enforcement of session defaults
 
----
+## Getting Started
 
-### Requirements
-- Frappe >= v13.0.0
+### Prerequisites
+- Empress >= v13.0.0
 
----
+### Installation
+Follow these straightforward steps to get Strict Session Defaults up and running:
 
-#### Setup
+1. Navigate to your bench directory:
 
-⚠️ *Important* ⚠️
+   ```sh
+   cd ~/Empress-bench
+   ```
 
-*Do not forget to replace [sitename] with the name of your site in all commands.*
+2. Clone the plugin from GitHub:
 
-#### Install
-1. Go to bench directory
+   ```sh
+   git clone https://github.com/empress-eco/strict_session_defaults.git
+   ```
 
-```
-cd ~/frappe-bench
-```
+3. Build the plugin:
 
-2. Get plugin from Github
+   ```sh
+   bench build --app strict_session_defaults
+   ```
 
-*(Required only once)*
+4. Install the plugin on your desired site:
 
-```
-bench get-app https://github.com/kid1194/frappe-strict-session-defaults
-```
+   ```sh
+   bench --site [sitename] install-app strict_session_defaults
+   ```
 
-3. Build plugin
+## Usage
+After installation, you can easily manage your session settings:
 
-*(Required only once)*
+1. Navigate to `Strict Session Defaults Settings`
+2. Enable the feature by checking the `Is Enabled` box
+3. Select your preferred `Roles Condition`
+4. Add roles that the condition will apply to
+5. Similarly, manage the `Users Condition` and `Users`
 
-```
-bench build --app strict_session_defaults
-```
+## Contributing
+We welcome your contributions! Here's how you can contribute:
 
-4. Install plugin on a specific site
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
-```
-bench --site [sitename] install-app strict_session_defaults
-```
-
-5. Check the usage section below
-
-#### Update
-1. Go to app directory
-
-```
-cd ~/frappe-bench/apps/strict_session_defaults
-```
-
-2. Get updates from Github
-
-```
-git pull
-```
-
-3. Go to bench directory
-
-```
-cd ~/frappe-bench
-```
-
-4. Build plugin
-
-```
-bench build --app strict_session_defaults
-```
-
-5. Update a specific site
-
-```
-bench --site [sitename] migrate
-```
-
-6. (Optional) Restart bench
-
-```
-bench restart
-```
-
-#### Uninstall
-1. Go to bench directory
-
-```
-cd ~/frappe-bench
-```
-
-2. Uninstall plugin from a specific site
-
-```
-bench --site [sitename] uninstall-app strict_session_defaults
-```
-
-3. Remove plugin from bench
-
-```
-bench remove-app strict_session_defaults
-```
-
-4. (Optional) Restart bench
-
-```
-bench restart
-```
-
----
-
-### Usage
-1. Go to `Strict Session Defaults Settings`
-2. Check `Is Enabled` box
-3. Select the `Roles Condition` desired
-4. Add the roles that the condition applies to
-5. Handle the `Users Condition` and `Users` in the same way
-
----
-
-### Issues
-If you find bug in the plugin, please create a [bug report](https://github.com/kid1194/frappe-strict-session-defaults/issues/new?assignees=kid1194&labels=bug&title=%5BBUG%5D) and let us know about it.
-
----
+## License and Acknowledgements
 
 ### License
-This repository has been released under the [MIT License](https://github.com/kid1194/frappe-strict-session-defaults/blob/main/LICENSE).
+This project is licensed under the MIT License. All contributions made to this project are also under the MIT License.
+
+### Acknowledgements
+We extend our heartfelt gratitude to the Empress Community for their pioneering work and enduring support that has been instrumental in the development of this project. Our sincere thanks to our contributors and our supportive community for their constant feedback and assistance.
